@@ -1,0 +1,7 @@
+<h1>Your Pokemon!</h1>
+<div ng-repeat="pokemon in caughtPokemon">
+  <h1>{{pokemon.name}}</h1>
+  <img ng-src="http://pokeapi.co/media/img/{{pokemon.apiid}}.png" alt="" />
+  <button type="button" name="button" ng-click="deletePokemon(pokemon)">Delete</button>
+  <a ng-click="detail()" href="/#/caught/{{pokemon._id}}"><button>Details</button></a>
+</div>
