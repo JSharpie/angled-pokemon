@@ -31,7 +31,29 @@ a{
     text-decoration:none;
     color:gray;
   }
+  &:visited{
+    text-decoration: none;
+    color:gray;
+  }
 }
 button{
   color:black;
+}
+ul{
+  list-style: none;
+  li{
+    font-size:40px;
+    display:inline-block;
+    margin: 0 auto;
+    width:20%;
+    a{
+      font-weight:normal;
+      text-decoration: none;
+      color:gray;
+      &:hover{
+        text-decoration:none;
+        color:gray;
+      }
+    }
+  }
 }
