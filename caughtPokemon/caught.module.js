@@ -11,7 +11,7 @@
           templateUrl: 'caughtPokemon/views/list.html',
           controller: 'CaughtController'
         })
-        .when('/caught/:_id', {
+        .when('/angled-pokemon/caught/:_id', {
           templateUrl: 'caughtPokemon/views/detail.html',
           controller: 'CaughtController'
         });
