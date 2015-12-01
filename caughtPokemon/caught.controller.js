@@ -3,35 +3,38 @@
   angular
   .module('caught')
   .controller('CaughtController', function ($http, $scope, CaughtService, $routeParams) {
+    var vm = this;
+    console.log(vm);
     CaughtService.getCaught().success(function (caught) {
-      $scope.caughtPokemon = caught;
+      vm.caughtPokemon = caught;
+      console.log(vm.caughtPokemon);
     });
     if($routeParams._id){
       CaughtService.detail($routeParams._id).success(function(data){
         // console.log(data);
-        $scope.pokemon = data;
+        vm.pokemon = data;
         $http.get(data.resource_url).success(function(data){
           console.log(data);
-          $scope.pokemonData = data;
+          vm.pokemonData = data;
         });
       });
     }
     // else{
     //   CaughtService.getCaught().success(function(pokemon){
     //     console.log(pokemon);
-    //     $scope.pokemon = pokemon;
+    //     vm.pokemon = pokemon;
     //   });
     // }
 
     else{
       CaughtService.getCaught().success(function(data){
-        $scope.pokemon = data;
+        vm.pokemon = data;
       });
     }
-    $scope.deletePokemon = function(pokemon){
+    vm.deletePokemon = function(pokemon){
       CaughtService.deletePokemon(pokemon);
     };
-    $scope.toggleHidden = function(cls){
+    vm.toggleHidden = function(cls){
       CaughtService.toggleHidden(cls);
     }
   });

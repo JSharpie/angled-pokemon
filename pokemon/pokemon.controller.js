@@ -4,11 +4,12 @@
   angular
     .module('pokemon')
     .controller('PokemonController', function ($scope, PokemonService, CaughtService) {
+      var vm = this;
       PokemonService.getPokemon().success(function(pokemon){
-        $scope.allPokemon = pokemon.pokemon
-        console.log($scope.allPokemon);
+        vm.allPokemon = pokemon.pokemon
+        console.log(vm.allPokemon);
       });
-      $scope.catchPokemon = function(pokemon){
+      vm.catchPokemon = function(pokemon){
         CaughtService.catchPokemon(pokemon);
       };
     });
