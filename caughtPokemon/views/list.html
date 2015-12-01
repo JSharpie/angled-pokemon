@@ -1,4 +1,4 @@
 <h1>Your Pokemon!</h1>
 
-<caught ng-repeat="pokemon in caughtCtrl.caughtPokemon" pokemon="pokemon" action="caughtCtrl.delete(pokemon)">
+<caught ng-repeat="pokemon in caughtCtrl.caughtPokemon" pokemon="pokemon" action="caughtCtrl.deletePokemon(pokemon)" details="caughtCtrl.detail(pokemon._id)">
 </caught>

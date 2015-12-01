@@ -27,6 +27,7 @@
       return $http.get(url + '/' + pokemonId);
     };
     var toggleHidden = function(cls){
+      console.log('fired');
       console.log(cls);
       $(cls).toggleClass('hidden');
     }

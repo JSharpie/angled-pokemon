@@ -8,7 +8,7 @@
         templateUrl: 'common/views/caught.directive.html',
         scope: {
           pokemon: '=',
-          action: '&'
+          action: '&',
         },
       };
     });

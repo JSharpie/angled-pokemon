@@ -8,6 +8,7 @@
         templateUrl: 'common/views/pokemon.directive.html',
         scope: {
           pokemon: '=',
+          pokemonData: '=',
           action: '&'
         },
       };

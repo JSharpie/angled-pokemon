@@ -2,4 +2,4 @@
   <h1>{{pokemon.name}}</h1>
   <img ng-src="http://pokeapi.co/media/img/{{pokemon.apiid}}.png" alt="" />
   <button type="button" name="button" ng-click="action()">Delete</button>
-  <a ng-click="detail()" href="#/caught/{{pokemon._id}}"><button>Details</button></a>
+  <a ng-click="caughtCtrl.detail()" href="#/caught/{{pokemon._id}}"><button>Details</button></a>
