@@ -9,7 +9,7 @@
       $routeProvider
         .when('/pokemon', {
           templateUrl: 'pokemon/views/list.html',
-          controller: 'PokemonController'
+          controller: 'PokemonController as pkmnCtrl'
         })
         .otherwise({ redirectTo: '/404'});
     });

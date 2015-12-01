@@ -9,11 +9,11 @@
       $routeProvider
         .when('/caught', {
           templateUrl: 'caughtPokemon/views/list.html',
-          controller: 'CaughtController'
+          controller: 'CaughtController as caughtCtrl'
         })
         .when('/angled-pokemon/caught/:_id', {
           templateUrl: 'caughtPokemon/views/detail.html',
-          controller: 'CaughtController'
+          controller: 'CaughtController as caughtCtrl'
         });
 
     });
