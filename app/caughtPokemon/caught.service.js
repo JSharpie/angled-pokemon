@@ -4,7 +4,7 @@
   .module('caught')
   .factory('CaughtService', function ($http) {
     var url = 'https://tiny-tiny.herokuapp.com/collections/caught-pokemon';
-    var detailUrl = 'https://pokeapi.co/'
+    var detailUrl = 'http://pokeapi.co/'
     var getCaught = function () {
       return $http.get(url);
     };
