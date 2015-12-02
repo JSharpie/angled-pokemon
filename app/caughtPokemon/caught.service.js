@@ -11,7 +11,7 @@
     var catchPokemon = function(pokemon){
       $http.post(url, pokemon).then(function(res){
         // $rootScope.$broadcast('like:added');
-        console.log(res.data._id);
+        console.log(res.data);
         var numb = res.data.resource_uri.match(/\d/g);
         numb.shift();
         var id = parseInt(numb.join(''));
