@@ -3,8 +3,8 @@
   angular
   .module('caught')
   .factory('CaughtService', function ($http) {
-    var url = 'http://tiny-tiny.herokuapp.com/collections/caught-pokemon';
-    var detailUrl = 'http://pokeapi.co/'
+    var url = 'https://tiny-tiny.herokuapp.com/collections/caught-pokemon';
+    var detailUrl = 'https://pokeapi.co/'
     var getCaught = function () {
       return $http.get(url);
     };
