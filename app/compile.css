@@ -1,0 +1,53 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-image: url("http://www.wallpaperhi.com/thumbnails/detail/20121124/pokemon%20pikachu%201920x1080%20wallpaper_www.wallpaperhi.com_40.jpg");
+  background-position: top;
+  background-size: contain; }
+
+.hidden {
+  display: none; }
+
+.pokemonList {
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 10px;
+  width: 15%; }
+
+h1 {
+  color: gray;
+  text-transform: capitalize; }
+
+p {
+  color: gray;
+  font-size: 30px; }
+
+a {
+  font-weight: normal;
+  text-decoration: none;
+  color: gray; }
+  a:hover {
+    text-decoration: none;
+    color: gray; }
+  a:visited {
+    text-decoration: none;
+    color: gray; }
+
+button {
+  color: black; }
+
+ul {
+  list-style: none; }
+  ul li {
+    font-size: 40px;
+    display: inline-block;
+    margin: 0 auto;
+    width: 20%; }
+    ul li a {
+      font-weight: normal;
+      text-decoration: none;
+      color: gray; }
+      ul li a:hover {
+        text-decoration: none;
+        color: gray; }
